@@ -96,6 +96,8 @@ Private data members are directly accessible with the "." operator.
 
 They are denoted with "__" at the beginning of the property name.
 
+Python doesn't enforce the "__" rule, it's just a naming convention. You can still get around this. Getter method.
+
 ```python
 class Wizard:
     def __init__(self, name, stamina, intelligence):
@@ -104,7 +106,8 @@ class Wizard:
         self.name = name
         self.health = 100 * stamina
         self.mana = 10 * intelligence
+
+    # getter method for private __stamina field
+    def get_stamina():
+        return self.__stamina
 ```
-
-Python doesn't enforce the "__" rule, it's just a naming convention. You can still get around this.
-
