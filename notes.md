@@ -30,7 +30,7 @@ print(legolas.health)
 print(bard.arrows)
 ```
 
-# Methods
+## Methods
 
 A method is a function that's directly tied to a class and has access to its properties.
 The first parameter to a method is the instance of the class itself ("self").
@@ -88,3 +88,19 @@ class Wall:
     __init__(self, height):
         self.height = height # <- instance varibles, every object has it's own value
 ```
+
+# Encapsulation
+
+## Private data members
+Private data members are directly accessible with the "." operator.
+
+They are denoted with "__" at the beginning of the property name.
+
+```python
+class Wizard:
+    def __init__(self, name, stamina, intelligence):
+        self.__stamina = stamina # <- private
+        self.__intelligence = intelligence # <- private
+        self.name = name
+        self.health = 100 * stamina
+        self.mana = 10 * intelligence
