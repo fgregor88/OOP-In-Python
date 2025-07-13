@@ -1,3 +1,13 @@
+# Object Oriented Programming
+
+## Clean Code
+
+Only Uncle Bob knows ...
+
+## Dry
+
+Don't repeat yourself.
+
 # Class
 
 A class is a new custom type, but instead of being a built-in type, classes are custom types that you define.
