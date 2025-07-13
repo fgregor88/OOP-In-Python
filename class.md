@@ -8,7 +8,7 @@ A object is an instance of a class. For example Opel Insiagnia is an instance of
 
 # Examples
 
-'''python
+```python
 class Archer:
     health = 40
     arrows = 10
@@ -18,4 +18,4 @@ bard = Archer()
 
 print(legolas.health)
 print(bard.arrows)
-'''
+```
