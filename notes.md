@@ -73,3 +73,18 @@ print(soldier_one.armor)
 print(soldier_one.num_weapons)
 # prints "10)
 ```
+
+## Class Variables vs. Instance Variables
+
+Class variables are usually a bad idea. Initialize properties through the constructor.
+
+```python
+class Wall:
+    height = 10 # <- this is a class variables, it is shared between all instances of the Wall class
+```
+
+```python
+class Wall:
+    __init__(self, height):
+        self.height = height # <- instance varibles, every object has it's own value
+```
