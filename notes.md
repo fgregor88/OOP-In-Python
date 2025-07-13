@@ -104,3 +104,7 @@ class Wizard:
         self.name = name
         self.health = 100 * stamina
         self.mana = 10 * intelligence
+```
+
+Python doesn't enforce the "__" rule, it's just a naming convention. You can still get around this.
+
