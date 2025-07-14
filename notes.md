@@ -129,3 +129,19 @@ import random
 attack_damage = random.randrange(5)
 ```
 
+# Inheritance
+
+A class can inheric members and methods from another class. We say that they are in an perent - child relationship.
+The subclass (child class) inherites everything ... EVERYTHING ... So don't use ingeritance if you don't want this.
+
+Basic example of class inheritance. Animal is the parent class, Dog is the child class. We can use the Animals constructor to assign the inherited members. "super()" method is used to access parents members and methods.
+
+```python
+class Animal:
+    def __init__(self, alive):
+        self.alive = alive
+
+class Dog(Animal):
+    def __init__(self, alive, breed):
+        super().__init__(alive)
+	self.breed = breed
