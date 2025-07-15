@@ -1,5 +1,6 @@
 # Object Oriented Programming
 
+
 ## Clean Code
 
 Only Uncle Bob knows ...
@@ -145,3 +146,40 @@ class Dog(Animal):
     def __init__(self, alive, breed):
         super().__init__(alive)
 	self.breed = breed
+```
+
+# Polymorphism
+
+Polymorphism in programming is the ability to present the same interface (function or method signature) for many different underlying forms (data types).
+
+- "poly" means "many"
+- "morph" means "to change" or "form"
+
+A classic example is a Shape class that Rectangle, Circle and Triangle can inherit from. Each has different underlying data:
+- The circle needs its center point coordinates and radius
+- The rectangle needs two coordinates for the top left and bottom right corners
+- The triangle needs coordinates for the corners
+
+## Examples
+
+```python
+def draw_shape(self)
+
+shapes = [Circle(5,5,10), Rectangle(1,3,5,6)]
+for shape in shapes:
+    print(shape.draw_space())
+```
+
+```python
+class Human:
+    def hit_by_fire(self):
+        self.health -= 5
+	return self.health
+
+class Archer:
+    def hit_by_fire(self):
+        self.health -= 10
+	return self.health
+```	
+
+
